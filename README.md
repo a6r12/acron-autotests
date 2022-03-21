@@ -4,14 +4,14 @@
 ## :shinto_shrine: Содержание:
 
 - <a href="#shinto_shrine-технологии-и-инструменты">Технологии и инструменты</a> 
-- <a href="#-shinto_shrine-реализованные-проверки">Реализованные проверки</a>
-- <a href="#Сборка в Jenkins">Сборка в Jenkins</a>
-- <a href="#Запуск из терминала">Запуск из терминала</a>
-- <a href="#Allure отчет">Allure отчет</a>
-- <a href="#Интеграция с Allure TestOps">Интеграция с Allure TestOps</a>
-- <a href="#Интеграция с Jira">Интеграция с Jira</a>
-- <a href="#Отчет в Telegram">Отчет в Telegram</a>
-- <a href="#Видео примеры прохождения тестов">Видео примеры прохождения тестов</a>
+- <a href="#shinto_shrine-реализованные-проверки">Реализованные проверки</a>
+- <a href="#shinto_shrine-сборка-в-Jenkins">Сборка в Jenkins</a>
+- <a href="#shinto_shrine-запуск-из-терминала">Запуск из терминала</a>
+- <a href="#shinto_shrine-allure-отчет">Allure отчет</a>
+- <a href="#shinto_shrine-интеграция-с-allure-testops">Интеграция с Allure TestOps</a>
+- <a href="#shinto_shrine-интеграция-с-jira">Интеграция с Jira</a>
+- <a href="#shinto_shrine-отчет-в-telegram">Отчет в Telegram</a>
+- <a href="#shinto_shrine-видео-примеры-прохождения-тестов">Видео примеры прохождения тестов</a>
 
 ## :shinto_shrine: Технологии и инструменты
 <p align="center">
