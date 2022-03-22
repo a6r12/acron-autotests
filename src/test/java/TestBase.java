@@ -14,9 +14,9 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {;
         Configuration.baseUrl = "https://www.acron.ru/";
-        Configuration.browserSize =System.getProperty("size", "1920x1080");
+        Configuration.browserSize = System.getProperty("size", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
-
+        Configuration.pageLoadTimeout = 80000;
         Configuration.browserVersion = System.getProperty("version", "91");
 
         //password and user for remote browser

@@ -17,7 +17,6 @@ public class AcronAutomatedTests extends TestBase {
         step("Открыть главную страницу", () -> {
             open(baseUrl);
         });
-        sleep(30000);
         step("Кликнуть на бургер", () -> {
             $("[class*='burger js-burger']").click();
         });
