@@ -95,12 +95,12 @@ test
 ## :shinto_shrine: Интеграция с Jira
 - ### Страница с задачей в Jira
 <p align="center">
-<img title="Jira issue" src="images/screenshots/jenkins-dashboard.png">
+<img title="Jira issue" src="images/screenshots/jira-issue.png">
 </p>
 
 ## :shinto_shrine: Отчет в Telegram
 <p align="center">
-<img title="Telegram notification message" src="images/screenshots/jira-issue.png">
+<img title="Telegram notification message" src="images/screenshots/telegram-notification.png">
 </p>
 
 ## :shinto_shrine: Видео примеры прохождения тестов
