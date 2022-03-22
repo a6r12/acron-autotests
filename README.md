@@ -104,3 +104,7 @@ test
 </p>
 
 ## :shinto_shrine: Видео примеры прохождения тестов
+> К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
+<p align="center">
+  <img title="Selenoid Video" src="images/gif/test-run.gif">
+</p>
