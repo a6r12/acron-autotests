@@ -6,6 +6,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.WebDriverConditions.url;
 import static io.qameta.allure.Allure.step;
 
 public class AcronAutomatedTests extends TestBase {
@@ -73,11 +74,12 @@ public class AcronAutomatedTests extends TestBase {
         step("Кликнуть на бургер", () -> {
             $("[class*='burger js-burger']").click();
         });
-        //// тут беда
         step("Открыть страницу \"Купить удобрения\"", () -> {
-            $x("//button[@span='Купить удобрения']").click();
+            $(".menu__inner .btn").click();
         });
         step("Открылась страница \"Купить удобрения\"", () -> {
+            switchTo().window(1);
+            webdriver().shouldHave(url("https://market.acron.ru/"));
             $("#section_banner").shouldHave(text("Агромаркет АКРОН"));
         });
     }
