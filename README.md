@@ -36,7 +36,34 @@
 
 ## :shinto_shrine: Сборка в Jenkins
 
+### Параметры сборки в Jenkins:
+
+- browser (браузер, по умолчанию chrome)
+- version (версия браузера, по умолчанию 91.0)
+- size (размер окна браузера, по умолчанию 1920x1080)
+- remoteUrl (адрес удаленного сервера selenoid)
+- user (пользователль удаленного сервера selenoid, по умолчанию user1)
+- password (пароль от удаленного сервера selenoid, по умолчанию 1234)
+- threads (количество потоков)
+
 ## :shinto_shrine: Запуск из терминала
+Локальный запуск:
+```
+gradle clean test
+```
+
+Удаленный запуск:
+```
+clean
+test
+-Duser=${USER}
+-Dpassword=${PASSWORD}
+-Dbrowser=${BROWSER}
+-DremoteBrowser=${REMOTE_BROWSER}
+-Dversion=${VERSION}
+-Dsize=${BROWSER_SIZE}
+-Dthreads=${THREADS}
+```
 
 ## :shinto_shrine: Allure отчет
 
