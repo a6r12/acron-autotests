@@ -57,9 +57,6 @@ public class AcronAutomatedTests extends TestBase {
         step("Открыть страницу поиска по сайту", () -> {
             open(baseUrl);
         });
-        step("Кликнуть на бургер", () -> {
-            $("[class*='burger js-burger']").click();
-        });
         step("Проверка наличия блока информации с биржи", () -> {
             $(".stock__link ul li").shouldHave(text("MOEX:AKRN"));
         });
