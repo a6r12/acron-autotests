@@ -20,8 +20,8 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("version", "91");
 
         //password and user for remote browser
-        String user = System.getProperty("user", "user1");
-        String password = System.getProperty("password", "1234");
+        String user = System.getProperty("user");
+        String password = System.getProperty("password");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);

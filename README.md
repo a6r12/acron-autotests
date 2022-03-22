@@ -35,8 +35,13 @@
 - Проверка наличия на странице информации с биржи
 
 ## :shinto_shrine: Сборка в Jenkins
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/011-katana_sword_party-13-autotests/">Сборка в Jenkins</a>
+<p align="center">
+<img title="Jenkins Dashboard" src="images/screenshots/jenkins-dashboard.png">
+</p>
 
 ### Параметры сборки в Jenkins:
+Сборка в Jenkins
 
 - browser (браузер, по умолчанию chrome)
 - version (версия браузера, по умолчанию 91.0)
@@ -66,11 +71,36 @@ test
 ```
 
 ## :shinto_shrine: Allure отчет
+- ### Главный экран отчета
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/allure-main-page.png">
+</p>
+
+- ### Страница с проведенными тестами
+<p align="center">
+<img title="Allure Test Page" src="images/screenshots/allure-test-page.png">
+</p>
 
 ## :shinto_shrine: Интеграция с Allure TestOps
+- ### Экран с результатами запуска тестов
+<p align="center">
+<img title="TestOps Launch Page" src="images/screenshots/test-ops-launch-page.png">
+</p>
+
+- ### Страница с тестами в TestOps
+<p align="center">
+<img title="TestOps tests page" src="images/screenshots/test-ops-tests-page.png">
+</p>
 
 ## :shinto_shrine: Интеграция с Jira
+- ### Страница с задачей в Jira
+<p align="center">
+<img title="Jira issue" src="images/screenshots/jenkins-dashboard.png">
+</p>
 
 ## :shinto_shrine: Отчет в Telegram
+<p align="center">
+<img title="Telegram notification message" src="images/screenshots/jira-issue.png">
+</p>
 
 ## :shinto_shrine: Видео примеры прохождения тестов
