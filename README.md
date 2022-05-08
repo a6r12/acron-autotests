@@ -47,7 +47,6 @@
 - browser (браузер, по умолчанию chrome)
 - version (версия браузера, по умолчанию 99.0)
 - size (размер окна браузера, по умолчанию 1920x1080)
-- remoteUrl (адрес удаленного сервера selenoid)
 - threads (количество потоков)
 - необходимо добавить файл credentials.properties (содержащий в себе логины и пароли, пример в папке resources)
 
@@ -62,7 +61,6 @@ gradle clean test
 clean
 test
 -Dbrowser=${BROWSER}
--DremoteBrowser=${REMOTE_BROWSER}
 -Dversion=${VERSION}
 -Dsize=${BROWSER_SIZE}
 -Dthreads=${THREADS}
