@@ -28,6 +28,7 @@
 </p>
 
 ## :shinto_shrine: Реализованные проверки
+- Авторизация в маркете (тесты с PageObjects)
 - Открытие официальных источников в социальных сетях (Параметризированные тесты)
 - Открытие страницы с поиском по сайту
 - Поиск и выбор вакансии
@@ -44,12 +45,11 @@
 Сборка в Jenkins
 
 - browser (браузер, по умолчанию chrome)
-- version (версия браузера, по умолчанию 91.0)
+- version (версия браузера, по умолчанию 99.0)
 - size (размер окна браузера, по умолчанию 1920x1080)
 - remoteUrl (адрес удаленного сервера selenoid)
-- user (пользователль удаленного сервера selenoid)
-- password (пароль от удаленного сервера selenoid)
 - threads (количество потоков)
+- необходимо добавить файл credentials.properties (содержащий в себе логины и пароли, пример в папке resources)
 
 ## :shinto_shrine: Запуск из терминала
 Локальный запуск:
@@ -61,8 +61,6 @@ gradle clean test
 ```
 clean
 test
--Duser=${USER}
--Dpassword=${PASSWORD}
 -Dbrowser=${BROWSER}
 -DremoteBrowser=${REMOTE_BROWSER}
 -Dversion=${VERSION}

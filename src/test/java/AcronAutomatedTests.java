@@ -12,6 +12,24 @@ import static io.qameta.allure.Allure.step;
 public class AcronAutomatedTests extends TestBase {
 
     @Test
+    @DisplayName("Authorization")
+    void loginPageWithPageObject() {
+        step("Открыть страницу авторизации", () -> {
+            loginPage.openPage();
+        });
+        step("Ввести авторизационные данные", () -> {
+            loginPage
+                    .setEmail(email)
+                    .setPassword(password)
+                    .submitForm();
+        });
+        step("Проверка успешной автоизации", () -> {
+            loginPage.checkPage();
+        });
+    }
+
+
+    @Test
     @DisplayName("Check burger menu: open search page")
     void checkSearchPage() {
         step("Открыть главную страницу", () -> {

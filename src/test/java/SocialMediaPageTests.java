@@ -14,7 +14,7 @@ public class SocialMediaPageTests extends TestBase {
     static Stream<Arguments> mixedArgumentsTestDataProvider() {
         return Stream.of(
 //                Arguments.of(0, "https://www.acron.ru/contacts", "Акрон"), - не в рамках параметризованного
-                Arguments.of(1, "https://vk.com/acronpjsc", ".label", "email"),
+                Arguments.of(1, "https://vk.com/acronpjsc", "button[class*=\"quick_login_button flat_button button_wide\"]", "Войти"),
                 Arguments.of(2, "https://www.youtube.com/channel/UCKxgdzy7CMqws5Z6TR_UuqA", ".style-scope ytd-masthead", "Войти"),
                 Arguments.of(3, "https://t.me/acron_official", ".tgme_head", "DOWNLOAD"),
                 Arguments.of(4, "https://zen.yandex.ru/id/622af6a0ee026a77e11f92e8", ".channel-title", "Акрон" )
