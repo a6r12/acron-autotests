@@ -17,8 +17,11 @@ public interface CredentialsConfig extends Config {
     String remoteUrl();
 
     @Key("account_user")
-    String account_user();
+    String accountEmail();
 
     @Key("account_password")
-    String  account_password();
+    String accountPassword();
+
+    @Key("url_market")
+    String urlMarket ();
 }

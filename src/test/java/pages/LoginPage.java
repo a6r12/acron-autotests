@@ -18,8 +18,8 @@ public class LoginPage {
 
     // actions
 
-    public LoginPage openPage() {
-        open("https://market.acron.ru/personal");
+    public LoginPage openPage(String urlMarket) {
+        open(urlMarket + "/personal");
         authorizationPageName.shouldHave(text("Авторизация"));
 
         return this;
@@ -39,12 +39,6 @@ public class LoginPage {
 
     public LoginPage submitForm() {
         submitInput.click();
-
-        return this;
-    }
-
-    public LoginPage checkPage() {
-        accountPageName.shouldHave(text("Личный кабинет"));
 
         return this;
     }

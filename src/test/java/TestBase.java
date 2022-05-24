@@ -1,3 +1,4 @@
+import com.beust.ah.A;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import config.Credentials;
@@ -6,6 +7,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.AccountPage;
 import pages.LoginPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
@@ -14,12 +16,15 @@ import static com.codeborne.selenide.Selenide.sleep;
 public class TestBase {
 
     LoginPage loginPage = new LoginPage();
+    AccountPage accountPage = new AccountPage();
 
-    String email = Credentials.config.account_user();
-    String password = Credentials.config.account_password();
+    String accountEmail = Credentials.config.accountEmail();
+    String accountPassword = Credentials.config.accountPassword();
+    String urlMarket = Credentials.config.urlMarket();
 
     @BeforeAll
-    static void beforeAll() {;
+    static void beforeAll() {
+        ;
         Configuration.baseUrl = "https://www.acron.ru/";
         Configuration.browserSize = System.getProperty("size", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");

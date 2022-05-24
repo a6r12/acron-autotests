@@ -15,19 +15,18 @@ public class AcronAutomatedTests extends TestBase {
     @DisplayName("Authorization")
     void loginPageWithPageObject() {
         step("Открыть страницу авторизации", () -> {
-            loginPage.openPage();
+            loginPage.openPage(urlMarket);
         });
         step("Ввести авторизационные данные", () -> {
             loginPage
-                    .setEmail(email)
-                    .setPassword(password)
+                    .setEmail(accountEmail)
+                    .setPassword(accountPassword)
                     .submitForm();
         });
         step("Проверка успешной автоизации", () -> {
-            loginPage.checkPage();
+            accountPage.checkPage();
         });
     }
-
 
     @Test
     @DisplayName("Check burger menu: open search page")
