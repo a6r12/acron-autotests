@@ -17,7 +17,6 @@ public class LoginPage {
 
 
     // actions
-
     public LoginPage openPage(String urlMarket) {
         open(urlMarket + "/personal");
         authorizationPageName.shouldHave(text("Авторизация"));
